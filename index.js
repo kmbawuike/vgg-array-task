@@ -12,10 +12,12 @@
 
 // Answer
 let color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
-let order = ['1st', '2nd', '3rd', '4th', '5th', '6th', '7th'];
+let o = ["th", "st", "nd", "rd"]
 let num = 0 
 while(num < color.length){
-  console.log(`${order[num]} choice is ${color[num]}`)
+  num < 3 ? console.log(`${num + 1}${o[num + 1]} choice is ${color[num]}`) : 
+  console.log(`${num + 1}${o[0]} choice is ${color[num]}`)
+
   num++
 }
 
